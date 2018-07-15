@@ -140,7 +140,7 @@ class temper implements reserve {
 
 	@Override
 	public void cancel() {
-		// TODO Auto-generated method stub
+		System.out.println("목욕물 받기를 취소합니다.");
 		
 	}
 	
