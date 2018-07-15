@@ -62,10 +62,12 @@ class main {
 			ari.reservation();
 		}
 		else if(num == 3 ) {
-			
+			televison tv = new televison();
+			tv.reservation();
 		}
 		else if(num == 4 ) {
-			
+			temper te = new temper();
+			te.reservation();
 		}
 		else
 			System.out.println("오류 입니다.");
@@ -125,6 +127,21 @@ class televison implements reserve{
 	@Override
 	public void cancel() {
 		System.out.println("예약이 취소 되었습니다.");
+	}
+	
+}
+
+class temper implements reserve {
+
+	@Override
+	public void reservation() {
+		System.out.println("물을 틀어서 목욕물을 받습니다.");
+	}
+
+	@Override
+	public void cancel() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
